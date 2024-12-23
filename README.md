@@ -1,4 +1,5 @@
 # Tavily MCP Server
+[![smithery badge](https://smithery.ai/badge/mcp-tavily)](https://smithery.ai/server/mcp-tavily)
 
 A Model Context Protocol server that provides AI-powered web search capabilities using Tavily's search API. This server enables LLMs to perform sophisticated web searches, get direct answers to questions, and search recent news articles with AI-extracted relevant content.
 
@@ -38,6 +39,14 @@ A Model Context Protocol server that provides AI-powered web search capabilities
     - `days` (integer, optional): Number of days back to search
 
 ## Installation
+
+### Installing via Smithery
+
+To install Tavily for Claude Desktop automatically via [Smithery](https://smithery.ai/server/mcp-tavily):
+
+```bash
+npx -y @smithery/cli install mcp-tavily --client claude
+```
 
 ### Use `pip`
 
