@@ -53,6 +53,32 @@ or if you have `uv` installed:
 uv pip install mcp-tavily
 ```
 
+### Using Docker
+
+You can run the MCP server in a Docker container:
+
+```bash
+# Build the Docker image
+docker build -t mcp-tavily .
+
+# Run the container with your API key
+docker run -e TAVILY_API_KEY=your_api_key_here mcp-tavily
+```
+
+To use with Claude.app, update your settings to use Docker:
+
+```json
+"mcpServers": {
+  "tavily": {
+    "command": "docker",
+    "args": ["run", "--rm", "mcp-tavily"],
+    "env": {
+      "TAVILY_API_KEY": "your_api_key_here"
+    }
+  }
+}
+```
+
 ### Build the Server
 Clone this repository and build and install the program with your default Python interpreter (recommended).
 
