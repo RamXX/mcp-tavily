@@ -1,3 +1,13 @@
+########################################################
+### Deprecation notice
+
+I built this MCP server back in early March of 2025 when the MCP protocol was brand new and there were no consistent ways to do search in chatbots, predating other implementations. 
+
+Since then, the good folks at Tavily have released their official [Tavily MCP server](/faq/faq#how-does-tavily-ensure-the-accuracy-of-its-information) which is well-maintained and in sync with their latest capabilities. Therefore, I'm now deprecating this server in favor of theirs.
+
+########################################################
+
+
 # Tavily MCP Server
 
 A Model Context Protocol server that provides AI-powered web search capabilities using Tavily's search API. This server enables LLMs to perform sophisticated web searches, get direct answers to questions, and search recent news articles with AI-extracted relevant content.
